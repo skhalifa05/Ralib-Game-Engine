@@ -17,7 +17,8 @@ public:
 
     std::string& GetGUID();
     bool AddComponent(IComponent* p_pComponent);
-    IComponent* GetComponent(const std::string &p_strFamilyId);
+    template <typename T>
+    T* GetComponent();
     IComponent* RemoveComponent(const std::string &p_strFamilyId);
     void DeleteAllComponents();
 

@@ -77,6 +77,13 @@ build CMakeFiles/Game_Engine.dir/src/GameObject.cpp.o: CXX_COMPILER__Game_Engine
   OBJECT_DIR = CMakeFiles/Game_Engine.dir
   OBJECT_FILE_DIR = CMakeFiles/Game_Engine.dir/src
 
+build CMakeFiles/Game_Engine.dir/src/GameObjectManager.cpp.o: CXX_COMPILER__Game_Engine_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Game$ Eninge$ -$ Pt1/src/GameObjectManager.cpp || cmake_object_order_depends_target_Game_Engine
+  DEP_FILE = CMakeFiles/Game_Engine.dir/src/GameObjectManager.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Game Eninge - Pt1/include"
+  OBJECT_DIR = CMakeFiles/Game_Engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/Game_Engine.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Game_Engine
@@ -85,7 +92,7 @@ build CMakeFiles/Game_Engine.dir/src/GameObject.cpp.o: CXX_COMPILER__Game_Engine
 #############################################
 # Link the executable Game_Engine
 
-build Game_Engine: CXX_EXECUTABLE_LINKER__Game_Engine_Debug CMakeFiles/Game_Engine.dir/main.cpp.o CMakeFiles/Game_Engine.dir/src/Components/PositionComponent.cpp.o CMakeFiles/Game_Engine.dir/src/Components/CircleRenderComponent.cpp.o CMakeFiles/Game_Engine.dir/src/GameObject.cpp.o | /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Game$ Eninge$ -$ Pt1/lib/libraylib.a
+build Game_Engine: CXX_EXECUTABLE_LINKER__Game_Engine_Debug CMakeFiles/Game_Engine.dir/main.cpp.o CMakeFiles/Game_Engine.dir/src/Components/PositionComponent.cpp.o CMakeFiles/Game_Engine.dir/src/Components/CircleRenderComponent.cpp.o CMakeFiles/Game_Engine.dir/src/GameObject.cpp.o CMakeFiles/Game_Engine.dir/src/GameObjectManager.cpp.o | /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Game$ Eninge$ -$ Pt1/lib/libraylib.a
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
   LINK_LIBRARIES = -Wl,-rpath,"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Game Eninge - Pt1/lib"  "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Game Eninge - Pt1/lib/libraylib.a"  -framework CoreFoundation  -framework IOKit  -framework CoreGraphics  -framework AppKit
   LINK_PATH = -L"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Game Eninge - Pt1/lib"

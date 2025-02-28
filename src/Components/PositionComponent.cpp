@@ -11,7 +11,7 @@ PositionComponent::PositionComponent(GameObject* parent): IComponent(parent, "Po
 
 void PositionComponent::SetPosition(Vector3 newPos) {
     transform = MatrixTranslate(newPos.x, newPos.y, newPos.z);  // Reset transform
-    position = newPos;  //
+    position = newPos;
 }
 
 

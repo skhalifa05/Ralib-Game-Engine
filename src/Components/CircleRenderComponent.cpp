@@ -15,7 +15,7 @@ CircleRenderComponent::CircleRenderComponent(GameObject* parent, float r, Color 
 void CircleRenderComponent::Render() {
     std::cout << "Rendering Circle at: " << radius << "\n";
     if (gameObject) {
-        PositionComponent* position = dynamic_cast<PositionComponent *>(gameObject->GetComponent("Position"));
+     PositionComponent* position = gameObject->GetComponent<PositionComponent>();
         if (position) {
             Vector3 pos = position->GetPosition();
             DrawCircleV({pos.x, pos.y}, radius, foregroundColor);

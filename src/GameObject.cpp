@@ -36,9 +36,13 @@ bool GameObject::AddComponent(IComponent* p_pComponent) {
     return true;
 }
 
-IComponent* GameObject::GetComponent(const std::string& p_strFamilyId) {
-    auto it = m_components.find(p_strFamilyId);
-    return (it != m_components.end()) ? it->second : nullptr;
+template <typename T>
+T* GameObject::GetComponent() {
+    for (auto& pair : m_components) {
+        T* component = dynamic_cast<T*>(pair.second);
+        if (component) return component;
+    }
+    return nullptr;
 }
 
 
@@ -67,7 +71,7 @@ void GameObject::Update(float deltaTime) {
 
 void GameObject::Render() {
     // ✅ Get PositionComponent if it exists
-    PositionComponent* position = dynamic_cast<PositionComponent*>(GetComponent("Position"));
+    PositionComponent* position = GetComponent<PositionComponent>();
 
     if (position) {
         Matrix transform = position->GetTransform();

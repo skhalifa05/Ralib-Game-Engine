@@ -22,6 +22,8 @@ add_executable(Game_Engine main.cpp
         src/Components/CircleRenderComponent.h
         src/GameObject.cpp
         src/GameObject.h
+        src/GameObjectManager.cpp
+        src/GameObjectManager.h
 )
 
 # Link libraries

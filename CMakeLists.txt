@@ -24,6 +24,15 @@ add_executable(Game_Engine main.cpp
         src/GameObject.h
         src/GameObjectManager.cpp
         src/GameObjectManager.h
+        src/StateManager.cpp
+        src/StateManager.h
+        src/States/BaseState.h
+        src/States/IdleState.h
+        src/States/IdleState.cpp
+        src/States/WalkingState.cpp
+        src/States/WalkingState.h
+        src/States/JumpingState.cpp
+        src/States/JumpingState.h
 )
 
 # Link libraries

@@ -13,7 +13,6 @@ CircleRenderComponent::CircleRenderComponent(GameObject* parent, float r, Color 
     : RenderComponent(parent, "CircleRenderComponent"), radius(r), foregroundColor(color) {}
 
 void CircleRenderComponent::Render() {
-    std::cout << "Rendering Circle at: " << radius << "\n";
     if (gameObject) {
      PositionComponent* position = gameObject->GetComponent<PositionComponent>();
         if (position) {
